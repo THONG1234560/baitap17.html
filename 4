@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>17-4.html</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.5s ease;
+        }
+        .square1 {
+            background-color: yellow;
+            width: 40px;
+            height: 40px;
+            margin-left: 20px;
+            display: inline-block;
+        }
+        .square2 {
+            background-color: green;
+            width: 40px;
+            height: 40px;
+            margin-left: 20px;
+            display: inline-block;
+        }
+        .square3 {
+            background-color: gray;
+            width: 40px;
+            height: 40px;
+            margin-left: 20px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Change background color</h1>
+    <p>Mouse over the square</p>
+    <div class="square1"></div>
+    <div class="square2"></div>
+    <div class="square3"></div>
+    <script>
+        const square1 = document.querySelector(".square1");
+        const square2 = document.querySelector(".square2");
+        const square3 = document.querySelector(".square3");
+        const body = document.body;
+
+        square1.addEventListener("mouseover", () => {
+            body.style.backgroundColor = "yellow";
+        });
+
+        square2.addEventListener("mouseover", () => {
+            body.style.backgroundColor = "green";
+        });
+
+        square3.addEventListener("mouseover", () => {
+            body.style.backgroundColor = "gray";
+        });
+    </script>
+</body>
+</html>
