@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>17-2.html</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.5s, color 0.5s;
+        }
+    </style>
+</head>
+<body>
+        <h1>Toggle Dark/Light Mode</h1>
+        <p>Click the button to toggle between dark and light mode for this page</p>
+        <button id="toggleButton">Toggle Dark Mode</button>
+    <script>
+        const body = document.body;
+        const button = document.getElementById("toggleButton");
+
+        button.addEventListener("click", () => {
+            if (body.style.backgroundColor === "black") {
+                body.style.backgroundColor = "white";
+                body.style.color = "black";
+                button.textContent = "Toggle Dark Mode";
+            } else {
+                body.style.backgroundColor = "black";
+                body.style.color = "white";
+                button.textContent = "Toggle Light Mode";
+            }
+        });
+    </script>
+</body>
+</html>
