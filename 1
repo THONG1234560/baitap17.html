@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>17-1.html</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="content">This is a text</h1>
+        <button id="hideButton">Hide text</button>
+        <button id="showButton">Show text</button>
+    </div>
+    <script>
+        const content = document.getElementById("content");
+        const hideButton = document.getElementById("hideButton");
+        const showButton = document.getElementById("showButton");
+        hideButton.addEventListener("click", () => {
+            content.style.display = "none";
+        });
+        showButton.addEventListener("click", () => {
+            content.style.display = "block";
+        });
+    </script>
+</body>
+</html>
